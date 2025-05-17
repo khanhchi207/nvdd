@@ -1,0 +1,66 @@
+body {
+  background-color: #fbeec1;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.letter-container {
+  text-align: center;
+}
+
+.envelope {
+  width: 300px;
+  height: 200px;
+  background-color: #d8c3a5;
+  border: 2px solid #a68a64;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: height 0.5s ease;
+}
+
+.letter {
+  opacity: 0;
+  padding: 20px;
+  transition: opacity 0.5s ease;
+}
+
+.letter img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.letter p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #5b3921;
+}
+
+.envelope.open {
+  height: 400px;
+}
+
+.envelope.open .letter {
+  opacity: 1;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #a47149;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #8d5a35;
+}

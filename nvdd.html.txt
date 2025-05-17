@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bức thư vintage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="letter-container">
+    <div class="envelope" id="envelope">
+      <div class="letter" id="letter">
+        <img src="https://i.imgur.com/4AiXzf8.jpeg" alt="Ảnh dễ thương" />
+        <p>Anh yêu em không?</p>
+      </div>
+    </div>
+    <div class="buttons">
+      <button onclick="openLetter()">Mở thư</button>
+      <button onclick="closeLetter()">Đóng thư</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
